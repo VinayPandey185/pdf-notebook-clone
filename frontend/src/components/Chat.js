@@ -11,7 +11,7 @@ function Chat({ setCurrentPage }) {
     setMessages(prev => [...prev, userMsg]);
 
     try {
-      const res = await fetch('http://localhost:5000/api/chat', {
+      const res = await fetch('https://pdf-notebook-clone.onrender.com/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ question: input.trim() })
