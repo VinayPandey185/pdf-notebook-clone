@@ -13,14 +13,14 @@ function App() {
       formData.append('file', file);
 
       try {
-        const res = await fetch('http://localhost:5000/api/upload', {
+        const res = await fetch('https://pdf-notebook-clone.onrender.com/api/upload', {
           method: 'POST',
           body: formData
         });
         const data = await res.json();
 
-        console.log('✅ PDF URL from backend:', `http://localhost:5000${data.filePath}`);
-        setPdfUrl(`http://localhost:5000${data.filePath}`);
+        console.log('✅ PDF URL from backend:', `https://pdf-notebook-clone.onrender.com${data.filePath}`);
+        setPdfUrl(`https://pdf-notebook-clone.onrender.com${data.filePath}`);
         setCurrentPage(1); // always reset to first page
       } catch (error) {
         console.error('Upload error:', error);
