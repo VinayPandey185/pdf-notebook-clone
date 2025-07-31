@@ -14,3 +14,8 @@ Backend: Node.js + Express
 
 ## Install & Run
 See DEPLOY.md for deployment and local run instructions.
+
+## Note:  AI chat currently returns dummy answers; real OpenAI code is included but not activated (requires paid API key).
+
+ 
+
