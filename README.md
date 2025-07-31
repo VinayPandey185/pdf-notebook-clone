@@ -1,9 +1,10 @@
 # NotebookLM Clone
 
-A web app to upload PDFs, view them, and chat with questions about the PDF.
+A web-based React + Node.js + Express.js application to upload, view, and chat with PDF files.
+Built to demonstrate AI integration, vector search, and interactive PDF navigation.
 
- Frontend: React  
- Backend: Node.js + Express
+Frontend: React  
+Backend: Node.js + Express
 
 ## Features
 - Upload and view large PDF files
